@@ -48,23 +48,28 @@ int deviation(dish applicant, dish desire){ //функция вычислени�
 }
 
 char *find(dish target, dish_list *fridge){
-    int min = deviation(fridge->current, target);
-    char* min_name = fridge->current.name;
-    dish_list *node = fridge->next;
+    if(fridge) {
+        int min = deviation(fridge->current, target);
+        char *min_name = fridge->current.name;
+        dish_list *node = fridge->next;
 
-    if(node == NULL) {
-        return min_name;
-    }
-
-    while (node->next != NULL) {
-        int temp = deviation(target, node->current);
-
-        if (temp < min) {
-            min = temp;
-            min_name = node->current.name;
+        if (node == NULL) {
+            return min_name;
         }
 
-        node = node->next;
+        while (node->next != NULL) {
+            int temp = deviation(target, node->current);
+
+            if (temp < min) {
+                min = temp;
+                min_name = node->current.name;
+            }
+
+            node = node->next;
+        }
+        return min_name;
     }
-    return min_name;
+    else{
+        return "error";
+    }
 }

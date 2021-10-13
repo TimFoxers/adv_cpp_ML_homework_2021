@@ -1,11 +1,11 @@
+#ifndef ADVCPP2021HOMEWORK1_FRIDGE_H
+#define ADVCPP2021HOMEWORK1_FRIDGE_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
 #include "dish.h"
-
-#ifndef ADVCPP2021HOMEWORK1_FRIDGE_H
-#define ADVCPP2021HOMEWORK1_FRIDGE_H
 
 typedef struct dish_list {
     dish current;
