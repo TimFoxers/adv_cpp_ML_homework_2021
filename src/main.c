@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <string.h>
-#include "../include/dish.h"
-#include "../include/fridge.h"
-#include "../include/input.h"
-#include "../include/deviation.h"
+#include "dish.h"
+#include "fridge.h"
+#include "input.h"
+#include "deviation.h"
 
 int main(){
     dish_list* fridge = NULL;

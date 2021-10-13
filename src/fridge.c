@@ -1,5 +1,5 @@
-#include "../include/dish.h"
-#include "../include/fridge.h"
+#include "dish.h"
+#include "fridge.h"
 
 bool push(dish_list** list, dish add) {
     dish_list* node = malloc(sizeof(dish_list));

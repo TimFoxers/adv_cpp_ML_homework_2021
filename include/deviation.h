@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../include/dish.h"
-#include "../include/fridge.h"
+#include "dish.h"
+#include "fridge.h"
 
 #ifndef ADVCPP2021HOMEWORK1_DEVIATION_H
 #define ADVCPP2021HOMEWORK1_DEVIATION_H

@@ -1,5 +1,5 @@
 //Так как идеально подходящего продукта обычно нет, мы можем только найти наименее неподходящий
-#include "../include/deviation.h"
+#include "deviation.h"
 
 int deviation(dish applicant, dish desire){ //функция вычисления отклонения продукта от требований
     int result = 0;
